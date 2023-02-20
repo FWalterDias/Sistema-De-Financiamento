@@ -1,5 +1,5 @@
 
-import { Parcela } from "./04 - parcela.js";// mesmo diretorio
+import { Parcela } from "./parcela.js";// mesmo diretorio
 
 // USANDO COMPOSIÇÃO //
 

@@ -1,5 +1,5 @@
-import { FinanciamentoCarencia } from "./05 - financiamentoCarencia.js";
-import { Financiamento } from "./03 - financiamento.js";// mesmo diretorio
+import { FinanciamentoCarencia } from "./financiamentoCarencia.js";
+import { Financiamento } from "./financiamento.js";// mesmo diretorio
 
 const comCarencia = document.querySelector('#comCarencia');
 const listaSuspensa = document.querySelector('#listaSuspensa');

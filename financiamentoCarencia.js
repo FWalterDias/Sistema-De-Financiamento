@@ -1,5 +1,5 @@
-import { Financiamento } from "./03 - financiamento.js";
-import { Parcela } from "./04 - parcela.js";
+import { Financiamento } from "./financiamento.js";
+import { Parcela } from "./parcela.js";
 
 export class FinanciamentoCarencia extends Financiamento {
     #carencia;
