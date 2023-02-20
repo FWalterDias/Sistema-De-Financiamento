@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador - Financiamento</title>
+    <style>
+        body {
+            background-color: rgb(221, 202, 178);
+            color: black;
+            font: 0.8em Tahoma;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        table,
+        tr,
+        th, td {
+            border-collapse: collapse;
+            border: 1px solid white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simulador de Financiamento com Sistema de Amortização Constante (SAC)</h1>
+    <input id="textoValor" type="text" placeholder="Valor do Bem"><br>
+    <input id="textoEntrada" type="text" placeholder="Entrada"><br>
+    <input id="textoTaxaJuros" type="text" placeholder="Taxa de Juros (%)"><br>
+    <input id="textoPrazo" type="text" placeholder="Prazo (em meses)"><br>
+    <button id="botaoCalcular">Calcular</button>
+    
+    
+    <label for="comCarencia">Com Carência?</label>
+    <input id="comCarencia" type="checkbox">
+
+    <select name="" id="listaSuspensa" hidden>
+        <option value="">--Selecione os meses--</option>
+        <option value="2">2 meses</option>
+        <option value="3">3 meses</option>
+        <option value="4">4 meses</option>
+    </select>
+ 
+    <p></p>
+    <p></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Número da parcela</th>
+                <th>Valor da Parcela</th>
+                <th>Juros</th>
+                <th>Amortização</th>
+                <th>Saldo devedo</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+        
+        </tbody>
+    </table>
+</body>
+<script type="module" src="02 - index.js"></script>
+
+</html>
